@@ -3,5 +3,8 @@
 # Futuras adições: 
 > Responsividade
 > Parte de Java script
-
- <img align="center" alt="Imagem-tela-de-login" src=" <img align="center" alt="Luis-Js" height="35" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">">
+<html>
+<body>
+ <img align="center" alt="Imagem-tela-de-login" src="https://cdn.discordapp.com/attachments/479368573341532165/1004189819133513829/Print-do-projeto.jpg">
+</body>
+</html>
