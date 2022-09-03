@@ -27,15 +27,36 @@ body * {
     flex-direction: column;
 }
 
-.left-login > h1 {
-    font-size: 3vw;
-    color: #459fed;
-    text-shadow: 0px 0px 40px rgba(0, 195, 255, 0.322);
-}
-
 .left-login-img {
     width: 35vw;
 }
+
+.title {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #1064ad 0%,
+            #459fed 29%,
+            #93c8f7 67%,
+            #ffffff 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 4vh;
+    text-shadow: 0px 0px 40px rgba(0, 195, 255, 0.322);
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
 
 .right-login {
     width: 50vw;
@@ -63,7 +84,7 @@ body * {
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.337);
 }
 
-.card-login > h1 {
+.card-login>h1 {
     color: #459fed;
     font-weight: 800;
     margin: 0;
@@ -78,7 +99,7 @@ body * {
     margin: 10px 0px;
 }
 
-.textfield > input {
+.textfield>input {
     width: 100%;
     border: none;
     border-radius: 10px;
@@ -87,17 +108,18 @@ body * {
     color: rgba(240, 255, 255, 0.871);
     font-size: 12pt;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.337);
-    outline:none;
+    outline: none;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-.textfield > label {
+.textfield>label {
     color: rgba(240, 255, 255, 0.871);
     margin-bottom: 10px;
 
 }
 
-.textfield > input::placeholder {
+.textfield>input::placeholder {
     color: rgba(240, 255, 255, 0.58);
 }
 
@@ -115,4 +137,64 @@ body * {
     background-color: #459fed;
     cursor: pointer;
     box-shadow: 0px 8px 40px -12px rgba(0, 195, 255, 0.322);
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 4vh;
+    text-shadow: 0px 0px 40px rgba(0, 195, 255, 0.322);
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-img {
+        width: 50vh;
+    }
+
+    .card-login {
+        width: 90%;
+    }
 }
